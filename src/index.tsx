@@ -1,3 +1,8 @@
+// File: src/index.tsx
+// Date: 5/20/2020
+// Note: cra-with-typescript.jsx
+// Name: stephen.oo@phonefusion.com
+// ..............................................................................
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.sass';

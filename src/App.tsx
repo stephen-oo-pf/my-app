@@ -1,4 +1,4 @@
-// File: src/Description.tsx
+// File: src/App.tsx
 // Date: 5/20/2020
 // Note: cra-with-typescript.jsx
 // Name: stephen.oo@phonefusion.com
