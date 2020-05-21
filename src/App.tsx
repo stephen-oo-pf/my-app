@@ -1,18 +1,47 @@
 // File: src/App.tsx
-// Date: 5/20/2020
+// Date: 05/21/2020
 // Note: cra-with-typescript.jsx
-// Name: stephen.oo@phonefusion.com
-// ..............................................................................
+//..............................................................................
 import * as React from 'react';
 import './App.sass';
-import Description from './components/Description';
-import Header from './components/Header';
 import logo from './logo.svg';
 
-class App extends React.Component {
+import Description from './components/Description';
+import Header from './components/Header';
+import Modal from './components/dialogs/Modal'; // container
+import VideoReact from './components/VideoReact';   // component
+
+interface IProps {
+
+}
+
+interface IState {
+  isOpen?: boolean;
+}
+class App extends React.Component<IProps, IState> {
+  constructor(props: IState) {
+    super(props);
+    this.state = { isOpen: false };
+  }
+
+  toggleModal = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+
   public render() {
     return (
       <div className="App">
+		<button onClick={this.toggleModal}>
+          Open the modal
+        </button>
+
+        <Modal show={this.state.isOpen}
+          onClose={this.toggleModal}>
+            <VideoReact />
+        </Modal>
+      
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <Header name="REACT" />
@@ -25,29 +54,4 @@ class App extends React.Component {
 
 export default App;
 
-// import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
+// eof
