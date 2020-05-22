@@ -10,6 +10,7 @@ import Description from './components/Description';
 import Header from './components/Header';
 import Modal from './components/dialogs/Modal'; // container
 import VideoReact from './components/VideoReact';   // component
+import MyD3Component from './components/MyD3Component';   // component
 
 interface IProps {
 
@@ -47,6 +48,7 @@ class App extends React.Component<IProps, IState> {
           <Header name="REACT" />
         </header>
         <Description countBy={3} />
+        <MyD3Component data={[1,2,3]}/>
       </div>
     );
   }

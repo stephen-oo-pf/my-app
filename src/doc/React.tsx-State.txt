@@ -1,0 +1,29 @@
+interface IProps {
+}
+
+interface IState {
+  playOrPause?: string;
+}
+
+class Player extends React.Component<IProps, IState> {
+  constructor(props: IProps) {
+    super(props);
+
+    this.state = {
+      playOrPause: 'Play'
+    };
+  }
+
+  render() {
+    return(
+      <div>
+        <button
+          ref={playPause => this.playPause = playPause}
+          title={this.state.playOrPause} // in this line I get an error
+        >
+          Play
+        </button>
+      </div>
+    );
+  }
+}
