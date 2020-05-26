@@ -1,5 +1,5 @@
 // File: src/Description.tsx
-// Date: 5/20/2020
+// Date: 05/20/2020
 // Note: class-component.jsx
 //..............................................................................
 import * as React from 'react';

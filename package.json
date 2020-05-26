@@ -1,22 +1,28 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "description": "PF: laaser911 - Safety Shield Emergency Response System",
   "private": true,
   "dependencies": {
+    "@react-google-maps/api": "^1.9.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "@types/d3": "^5.7.2",
+    "@types/googlemaps": "^3.39.6",
     "@types/jest": "^24.9.1",
     "@types/node": "^12.12.40",
     "@types/react": "^16.9.35",
+    "@types/react-datepicker": "^2.11.0",
     "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
     "d3": "^5.16.0",
     "react": "^16.13.1",
+    "react-datepicker": "^2.16.0",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "typescript": "^3.7.5",
-    "video-react": "^0.14.1"
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,5 +44,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jshashes": "^1.0.8",
+    "preval.macro": "^5.0.0",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-dropzone": "^11.0.1",
+    "react-grid-layout": "^0.18.3",
+    "react-pdf": "^4.1.0",
+    "react-rangeslider": "^2.2.0",
+    "react-sizeme": "^2.6.12",
+    "react-virtualized": "^9.21.2",
+    "video-react": "^0.14.1"
   }
 }

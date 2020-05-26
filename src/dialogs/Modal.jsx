@@ -1,6 +1,7 @@
 // File: Modal.jsx
-// Date: 05/21/2020
-// Note: React Video module HTMLL5 <video /> wrapper
+// Date: 05/25/2020
+// Note: Need to convert from JSX to TSX  your "Modal.jsx" is very close to 
+// being a typescript by just switching the PropTypes to Interfaces
 //..............................................................................
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -48,13 +49,11 @@ class Modal extends React.Component {
     );
   }
 }
-
 Modal.propTypes = {
   onClose: PropTypes.func.isRequired,
   show: PropTypes.bool,
   children: PropTypes.node
 };
-
 export default Modal;
 
 // eof

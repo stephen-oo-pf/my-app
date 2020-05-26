@@ -1,5 +1,5 @@
 // File: src/index.tsx
-// Date: 5/20/2020
+// Date: 05/20/2020
 // Note: cra-with-typescript.jsx
 // Name: stephen.oo@phonefusion.com
 // ..............................................................................

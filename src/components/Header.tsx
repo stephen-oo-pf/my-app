@@ -1,5 +1,5 @@
 // File: src/Header.tsx
-// Date: 5/20/2020
+// Date: 05/20/2020
 // Note: functional-component.jsx
 //..............................................................................
 import * as React from 'react';
@@ -9,7 +9,7 @@ interface IProps {
 }
 
 const Header: React.FC<IProps> = (props: IProps) => (
-  <h1>Hello, {props.name}! Welcome to React and TypeScript.</h1>
+  <h1>Hello, {props.name}! Welcome to React and TypeScript + D3.</h1>
 );
 
 Header.defaultProps = {

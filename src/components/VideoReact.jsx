@@ -1,6 +1,6 @@
 // File: VideoReact.jsx
 // Date: 5/21/2020
-// Note: React Video module HTMLL5 <video /> wrappper
+// Note: React Video module HTMLL5 <video /> wrapper
 //..............................................................................
 import React from 'react';
 import { Player } from 'video-react';
