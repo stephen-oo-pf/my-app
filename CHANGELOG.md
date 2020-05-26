@@ -1,5 +1,5 @@
 ## CHANGELOG .md
-### safety shield project dependencies
+### safety shield project React JSX dependencies
 - react-beautiful-dnd is used for the checklists... to re-order the steps
 
 - react-drop zone is used for the File uploads for FloorPlans/ERPs
