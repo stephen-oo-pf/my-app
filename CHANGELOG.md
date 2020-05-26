@@ -26,6 +26,8 @@
 
 - video-react is wrapper for html5 <video /> wrapper
 
+- react-spring is a spring-physics based animation library
+
 
 
 
