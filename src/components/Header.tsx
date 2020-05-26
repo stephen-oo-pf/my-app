@@ -1,6 +1,6 @@
 // File: src/Header.tsx
 // Date: 05/20/2020
-// Note: functional-component.jsx
+// Note: code convention for React-TypeScript functional-component.tsx
 //..............................................................................
 import * as React from 'react';
 

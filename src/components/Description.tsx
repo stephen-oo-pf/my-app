@@ -1,6 +1,6 @@
 // File: src/Description.tsx
 // Date: 05/20/2020
-// Note: class-component.jsx
+// Note: code convention for the React-TypeScript class-component.tsx
 //..............................................................................
 import * as React from 'react';
 

@@ -7,11 +7,14 @@ import './App.sass';
 import logo from './logo.svg';
 
 import Description from './components/Description';
-import Header from './components/Header';
+//import Header from './components/Header';
 import Modal from './dialogs/Modal'; // container dialog
 import VideoReact from './components/VideoReact';   // component
 import MyD3Component from './components/MyD3Component';   // component
 import EventCalendar from './components/EventCalendar'; // component
+
+import Main from './views/Dashboard/Main';	// component
+import Header from './views/Dashboard/Header'; // component
 
 interface IProps {
 
@@ -35,7 +38,9 @@ class App extends React.Component<IProps, IState> {
   public render() {
     return (
       <div className="App">
-		<button onClick={this.toggleModal}>
+      	<Header />
+		<Main />
+  		<button onClick={this.toggleModal}>
           Open the modal
         </button>
 
@@ -54,11 +59,13 @@ class App extends React.Component<IProps, IState> {
 			<input type="date" id="appt" name="appt" required />
 			<small>Office hours are 9am to 6pm - Mon to Fri</small>
          </div>
-          <Header name="REACT" />
+          
         </header>
         <Description countBy={3} />
         <MyD3Component data={[1,2,3]} />
+
       
+
       </div>
     );
   }
