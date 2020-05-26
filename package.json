@@ -3,6 +3,15 @@
   "version": "0.1.0",
   "description": "PF: laaser911 - Safety Shield Emergency Response System",
   "private": true,
+  "keywords": [
+    "chart",
+    "d3.js",
+    "react",
+    "typescript",
+    "pie",
+    "react-spring"
+  ],
+  "main": "src/index.tsx",
   "dependencies": {
     "@react-google-maps/api": "^1.9.2",
     "@testing-library/jest-dom": "^4.2.4",
@@ -54,6 +63,7 @@
     "react-pdf": "^4.1.0",
     "react-rangeslider": "^2.2.0",
     "react-sizeme": "^2.6.12",
+    "react-spring": "^8.0.27",
     "react-virtualized": "^9.21.2",
     "video-react": "^0.14.1"
   }

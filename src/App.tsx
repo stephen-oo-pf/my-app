@@ -15,6 +15,7 @@ import EventCalendar from './components/EventCalendar'; // component
 
 import Main from './views/Dashboard/Main';	// component
 import Header from './views/Dashboard/Header'; // component
+import D3Chart from './D3Chart';
 
 interface IProps {
 
@@ -63,7 +64,7 @@ class App extends React.Component<IProps, IState> {
         </header>
         <Description countBy={3} />
         <MyD3Component data={[1,2,3]} />
-
+		<D3Chart />
       
 
       </div>
