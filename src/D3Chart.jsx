@@ -6,6 +6,7 @@ import PieHooks from "./PieHooks";
 import PieSVG from "./PieSVG";
 import AnimatedPieHooks from "./AnimatedPieHooks";
 import AnimatedPieSVG from "./AnimatedPieSVG";
+import 'bulma'
 
 function D3Chart() {
   const generateData = (value, length = 5) =>
@@ -27,7 +28,7 @@ function D3Chart() {
   );
 
   return (
-    <div className="App">
+    <div className="hero is-warning">
       <div>
         <button onClick={changeData}>Transform</button>
       </div>
