@@ -1,22 +1,26 @@
-// File: src/App.tsx
-// Date: 05/27/2020
+// File: src/App.bak.tsx
+// Date: 05/28/2020
 // Note: cra-with-typescript.jsx
 //..............................................................................
 import * as React from 'react';
 import './App.sass';
 import logo from './logo.svg';
 
-import Description from './components/Description';
-//import Header from './components/Header';
-import Modal from './dialogs/Modal'; // container dialog
-import VideoReact from './components/VideoReact';   // component
-import MyD3Component from './components/MyD3Component';   // component
-import EventCalendar from './components/EventCalendar'; // component
-import MyComponent from './components/MyComponent'; // component;
+//___ components ___
+import Description from './components/MySite/Description';
+//import Header from './components/MySite/Header';
+import VideoReact from './components/MyVideo/VideoReact';   
+import MyD3Component from './components/MyTypeScript/MyD3Component'; 
+import EventCalendar from './components/MyD3/EventCalendar';
+import MyComponent from './components/MyTypeScript/MyComponent'; 
 
-import Main from './views/Dashboard/Main';	// component
-import Header from './views/Dashboard/Header'; // component
-import D3Chart from './D3Chart';
+//___ dialogs ___
+import Modal from './dialogs/Modal';
+
+//___ views ___
+import Main from './views/Dashboard/Main';	
+import Header from './views/Dashboard/Header';
+import D3Chart from './views/EventResponse/D3Chart';
 
 
 interface IProps {

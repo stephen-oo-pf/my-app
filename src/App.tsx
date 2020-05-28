@@ -6,7 +6,7 @@ import * as React from 'react';
 import './App.sass';
 import logo from './logo.svg';
 
-import D3Chart from './D3Chart';
+import D3Chart from './views/EventResponse/D3Chart';
 
 
 interface IProps {

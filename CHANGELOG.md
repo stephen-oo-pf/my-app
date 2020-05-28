@@ -28,6 +28,9 @@
 
 - react-spring is a spring-physics based animation library
 
+- @iconify/react
+
+- @iconify/icons-mdi
 
 
 
