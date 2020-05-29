@@ -1,5 +1,5 @@
-// File: src/Description.tsx
-// Date: 05/20/2020
+// File: src/MainTSX.tsx
+// Date: 05/28/2020
 // Note: Code convention for the React-TypeScript class-component.tsx
 //..............................................................................
 import * as React from 'react';
@@ -12,7 +12,7 @@ interface IState {
   count: number;
 }
 
-class Description extends React.Component<IProps, IState> {
+class MainTSX extends React.Component<IProps, IState> {
   public static defaultProps: Partial<IProps> = {
     countBy: 1,
   };
@@ -37,6 +37,6 @@ class Description extends React.Component<IProps, IState> {
   }
 }
 
-export default Description;
+export default MainTSX;
 
 // eof

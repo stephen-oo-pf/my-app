@@ -7,7 +7,7 @@ import './App.sass';
 import logo from './logo.svg';
 
 //___ components ___
-import Description from './components/MySite/Description';
+import Description from './components/MySite/Content';
 //import Header from './components/MySite/Header';
 import VideoReact from './components/MyVideo/VideoReact';   
 import MyD3Component from './components/MyTypeScript/MyD3Component'; 

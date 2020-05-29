@@ -4,7 +4,8 @@
 //..............................................................................
 import React from 'react';
 import { Player } from 'video-react';
-import "../components/video-react.sass";
+//import "../components/video-react.sass";
+import "./video-react.sass";
 
 export default props => {
   return (

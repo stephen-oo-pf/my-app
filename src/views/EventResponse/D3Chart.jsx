@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
 import * as d3 from "d3";
-import PieClass from "./PieClass";
-import PieHooks from "./PieHooks";
-import PieSVG from "./PieSVG";
-import AnimatedPieHooks from "./AnimatedPieHooks";
-import AnimatedPieSVG from "./AnimatedPieSVG";
-import 'bulma'
+import PieClass from "../../components/MyChart/PieClass";
+// import PieHooks from "../../components/MyChart/PieHooks";
+// import PieSVG from "../../components/MyChart/PieSVG";
+// import AnimatedPieHooks from "../../components/MyChart/AnimatedPieHooks";
+// import AnimatedPieSVG from "../../components/MyChart/AnimatedPieSVG";
 
 function D3Chart() {
   const generateData = (value, length = 5) =>
@@ -32,6 +30,7 @@ function D3Chart() {
       <div>
         <button onClick={changeData}>Transform</button>
       </div>
+            {/*
       <div>
         <span className="label">Animated Pie SVG (React Spring)</span>
         <AnimatedPieSVG
@@ -42,6 +41,7 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
+
       <div>
         <span className="label">Animated Pie Hooks (D3 animations)</span>
         <AnimatedPieHooks
@@ -52,6 +52,7 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
+      
       <div>
         <span className="label">SVG Elements</span>
         <PieSVG
@@ -62,6 +63,7 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
+
       <div>
         <span className="label">Hooks</span>
         <PieHooks
@@ -72,6 +74,7 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
+            */}
       <div>
         <span className="label">React Class</span>
         <PieClass
