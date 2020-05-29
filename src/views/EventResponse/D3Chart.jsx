@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import * as d3 from "d3";
-import PieClass from "../../components/MyChart/PieClass";
-// import PieHooks from "../../components/MyChart/PieHooks";
-// import PieSVG from "../../components/MyChart/PieSVG";
-// import AnimatedPieHooks from "../../components/MyChart/AnimatedPieHooks";
-// import AnimatedPieSVG from "../../components/MyChart/AnimatedPieSVG";
+import PieClass from "../../components/MyD3/PieClass";
+import PieHooks from "../../components/MyD3/PieHooks";
+import PieSVG from "../../components/MyD3/PieSVG";
+import AnimatedPieHooks from "../../components/MyD3/AnimatedPieHooks";
+import AnimatedPieSVG from "../../components/MyD3/AnimatedPieSVG";
 
 function D3Chart() {
   const generateData = (value, length = 5) =>
@@ -26,11 +26,11 @@ function D3Chart() {
   );
 
   return (
-    <div className="hero is-warning">
+    <div className="my-d3">
       <div>
         <button onClick={changeData}>Transform</button>
       </div>
-            {/*
+         
       <div>
         <span className="label">Animated Pie SVG (React Spring)</span>
         <AnimatedPieSVG
@@ -74,7 +74,7 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
-            */}
+            
       <div>
         <span className="label">React Class</span>
         <PieClass

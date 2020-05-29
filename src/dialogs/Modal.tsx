@@ -4,6 +4,7 @@
 //..............................................................................
 import React from "react";
 import ReactModal from "react-modal";
+import VideoReact from "./VideoReact";
 
 interface IModalProps {
   modalContent?: string | JSX.Element;
@@ -42,6 +43,8 @@ class Modal extends React.Component<IModalProps, IModalState> {
     const { modalContent, widthClose } = this.props;
     const customModalStyle = {
       content: {
+      	width: "320px",
+      	height: "240px",
         top: "50%",
         left: "50%",
         right: "auto",
@@ -58,12 +61,14 @@ class Modal extends React.Component<IModalProps, IModalState> {
           contentLabel="Minimal Modal Example"
           style={customModalStyle}
         >
+          <VideoReact />
           <div style={{ display: "flex", flexDirection: "column" }}>
             {modalContent}
             {widthClose && (
               <button onClick={this.handleCloseModal}>Close Modal</button>
             )}
           </div>
+
         </ReactModal>
       </div>
     );

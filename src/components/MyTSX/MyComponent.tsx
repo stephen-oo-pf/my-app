@@ -1,3 +1,5 @@
+// $> react-prototype-to-typescript MyJSX.js to MYTSX.js
+// React JavaScript to TypeScript Transform
 import React from "react";
 interface IMyComponentProps extends React.HTMLAttributes<Element> {
   alice?: string;
