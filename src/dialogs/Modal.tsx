@@ -15,6 +15,14 @@ interface IModalState {
   showModal: boolean;
 }
 
+const videoJsOptions = {
+  sources: [
+    {
+      src: "//vjs.zencdn.net/v/oceans.mp4",
+      type: "video/mp4"
+    }
+  ]
+};
 ReactModal.setAppElement("#root");
 
 class Modal extends React.Component<IModalProps, IModalState> {
@@ -61,14 +69,14 @@ class Modal extends React.Component<IModalProps, IModalState> {
           contentLabel="Minimal Modal Example"
           style={customModalStyle}
         >
-          <VideoReact />
+        		<VideoReact />
+         	
           <div style={{ display: "flex", flexDirection: "column" }}>
             {modalContent}
             {widthClose && (
               <button onClick={this.handleCloseModal}>Close Modal</button>
             )}
           </div>
-
         </ReactModal>
       </div>
     );

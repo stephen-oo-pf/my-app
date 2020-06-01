@@ -1,10 +1,14 @@
+// File: views/D3Chart.jsx
+// Date: 06/01/2020
+// Note: Event Resonse Drill Chart Prototypes
+//..............................................................................
 import React, { useState, useEffect } from "react";
 import * as d3 from "d3";
-import PieClass from "../../components/MyD3/PieClass";
-import PieHooks from "../../components/MyD3/PieHooks";
+// import PieClass from "../../components/MyD3/PieClass";
+// import PieHooks from "../../components/MyD3/PieHooks";
 import PieSVG from "../../components/MyD3/PieSVG";
-import AnimatedPieHooks from "../../components/MyD3/AnimatedPieHooks";
-import AnimatedPieSVG from "../../components/MyD3/AnimatedPieSVG";
+// import AnimatedPieHooks from "../../components/MyD3/AnimatedPieHooks";
+// import AnimatedPieSVG from "../../components/MyD3/AnimatedPieSVG";
 
 function D3Chart() {
   const generateData = (value, length = 5) =>
@@ -30,7 +34,7 @@ function D3Chart() {
       <div>
         <button onClick={changeData}>Transform</button>
       </div>
-         
+      {/*         
       <div>
         <span className="label">Animated Pie SVG (React Spring)</span>
         <AnimatedPieSVG
@@ -52,7 +56,7 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
-      
+      */}
       <div>
         <span className="label">SVG Elements</span>
         <PieSVG
@@ -63,7 +67,7 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
-
+      {/*
       <div>
         <span className="label">Hooks</span>
         <PieHooks
@@ -85,9 +89,11 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
+      */}
     </div>
   );
 }
 
 export default D3Chart;
 
+// eof

@@ -1,6 +1,6 @@
 // File: src/MyD3Component.tsx
 // Date: 5/21/2020
-// Note: function-component.jsx
+// Note: function-component.tsx
 //..............................................................................
 
 import React, { useRef, useEffect } from 'react';
