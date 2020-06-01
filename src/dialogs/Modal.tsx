@@ -5,7 +5,7 @@
 import React from "react";
 import ReactModal from "react-modal";
 import VideoReact from "./VideoReact";
-
+import ReactSelect from "./ReactSelect"
 interface IModalProps {
   modalContent?: string | JSX.Element;
   widthClose?: boolean;
@@ -15,14 +15,6 @@ interface IModalState {
   showModal: boolean;
 }
 
-const videoJsOptions = {
-  sources: [
-    {
-      src: "//vjs.zencdn.net/v/oceans.mp4",
-      type: "video/mp4"
-    }
-  ]
-};
 ReactModal.setAppElement("#root");
 
 class Modal extends React.Component<IModalProps, IModalState> {
@@ -69,7 +61,8 @@ class Modal extends React.Component<IModalProps, IModalState> {
           contentLabel="Minimal Modal Example"
           style={customModalStyle}
         >
-        		<VideoReact />
+       
+        		<ReactSelect />
          	
           <div style={{ display: "flex", flexDirection: "column" }}>
             {modalContent}
