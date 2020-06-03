@@ -30,6 +30,13 @@ interface IState {
 
 }
 class App extends React.Component<IProps, IState> {
+	componentDidMount() {
+		console.log( "listen(...)" );
+	}
+	
+	componentWillUnmount() {
+		console.log( "unlisten(...)" );
+	}
   public render() {
     return (
     	<div className="app"> 
