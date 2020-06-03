@@ -32,7 +32,9 @@ interface IState {
 class App extends React.Component<IProps, IState> {
   public render() {
     return (
-			<div className="app"> 
+    	<div className="app"> 
+    	{/*
+			<div className="App"> 
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
 
@@ -71,7 +73,8 @@ class App extends React.Component<IProps, IState> {
 				<hr />
 				<MyD3Component data={[1,2,3]} />
 				<hr />
-				<D3Chart />				
+				<D3Chart />		
+				*/}		
 			</div>
     );
   }
