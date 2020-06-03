@@ -24,8 +24,6 @@ import HeaderJSX from './views/MyRouter/HeaderJSX';
 import MainJSX from './views/MyRouter/MainJSX';	
 import D3Chart from './views/EventResponse/D3Chart';
 
-import './components/Component.sass';
-
 interface IProps {}
 
 interface IState {
