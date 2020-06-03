@@ -1,13 +1,27 @@
 // File: src/index.tsx
-// Date: 05/28/2020
-// Note: cra-with-typescript
+// Date: 06/03/2020
+// Note: my-app settings
 // ..............................................................................
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.sass';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom'
+
+/*
+Set up
+*/
+
+/*
+Check URL Params
+*/
+
+/*
+Initial Load
+*/
+
 
 ReactDOM.render(
   <React.StrictMode>

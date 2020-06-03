@@ -1,6 +1,6 @@
 // File: src/App.tsx
 // Date: 06/03/2020
-// Note: safety-shield settings
+// Note: my-app settings
 //..............................................................................
 import * as React from 'react';
 import './App.sass';
@@ -23,7 +23,6 @@ import HeaderJSX from './views/MyRouter/HeaderJSX';
 import MainJSX from './views/MyRouter/MainJSX';	
 import D3Chart from './views/EventResponse/D3Chart';
 
-
 interface IProps {}
 
 interface IState {
@@ -32,7 +31,7 @@ interface IState {
 class App extends React.Component<IProps, IState> {
   public render() {
     return (
-			<div className="app"> 
+			<div className="App"> 
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
 

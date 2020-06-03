@@ -4,13 +4,26 @@
 // ..............................................................................
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './_reset.scss;
-import '/_animations.scss;
-import './index.scss';
+import './_reset.sass';
+import './_animations.sass';
+import './index.sass';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom'
+
+/*
+Set up
+*/
+
+/*
+Check URL Params
+*/
+
+/*
+Initial Load
+*/
+
 
 ReactDOM.render(
   <React.StrictMode>
