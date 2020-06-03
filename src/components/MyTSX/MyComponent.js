@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import 'bulma'
 
 class MyComponent extends React.Component {
     static propTypes = {
@@ -21,7 +20,7 @@ class MyComponent extends React.Component {
         const { cake } = this.props;
         const { milk } = this.state;
         return (
-          <div ref={this.ref} className="hero is-primary">
+          <div ref={this.ref}>
             MyComponent-JS2TS:HOME
             <p>{this.props.alice}</p>
             <p>{this.props.ate}</p>
