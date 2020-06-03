@@ -1,12 +1,15 @@
 // File: views/D3Chart.jsx
-// Date: 06/01/2020
+// Date: 06/02/2020
 // Note: Event Resonse Drill Chart Prototypes
 //..............................................................................
 import React, { useState, useEffect } from "react";
 import * as d3 from "d3";
+
+import UICircleChart from "../../ui/UICircleChart";
+
 // import PieClass from "../../components/MyD3/PieClass";
 // import PieHooks from "../../components/MyD3/PieHooks";
-import PieSVG from "../../components/MyD3/PieSVG";
+// import PieSVG from "../../components/MyD3/PieSVG";
 // import AnimatedPieHooks from "../../components/MyD3/AnimatedPieHooks";
 // import AnimatedPieSVG from "../../components/MyD3/AnimatedPieSVG";
 
@@ -56,7 +59,7 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
-      */}
+
       <div>
         <span className="label">SVG Elements</span>
         <PieSVG
@@ -67,8 +70,7 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
-      {/*
-      <div>
+      <div>   
         <span className="label">Hooks</span>
         <PieHooks
           data={data}
@@ -78,7 +80,7 @@ function D3Chart() {
           outerRadius={100}
         />
       </div>
-            
+
       <div>
         <span className="label">React Class</span>
         <PieClass
@@ -88,8 +90,19 @@ function D3Chart() {
           innerRadius={60}
           outerRadius={100}
         />
+        */}
+        <div>
+          <span className="label">ReactJSX with D3.js Class Component</span>
+        <UICircleChart
+          data={data}
+          width={200}
+          height={200}
+          innerRadius={60}
+          outerRadius={100}
+        />
+      
+        
       </div>
-      */}
     </div>
   );
 }

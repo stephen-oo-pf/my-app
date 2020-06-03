@@ -1,10 +1,11 @@
 // File: src/MyD3Component.tsx
 // Date: 5/21/2020
-// Note: function-component.tsx
+// Note: Simple D3 (TypeScript)using SVG with React Hooks
 //..............................................................................
 
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
+import './MyD3Component.sass';
 
 interface IProps {
     data?: number[];
@@ -60,14 +61,16 @@ export const MyD3Component = (props: IProps) => {
 
     return (
     	<div>
-    	<h3>D3 Component</h3>
-        <svg
-            className="d3-component"
-            width={400}
-            height={200}
-            ref={d3Container}
-        />
-        </div>
+	    	<h3>Simple D3 (TypeScript)using SVG with React Hooks</h3>
+	    	<div className="svg-container">
+	      	<svg
+						className="my-d3-component"
+	        	width={400}
+	        	height={200}
+	        	ref={d3Container}
+	     		/>
+	     </div>
+	    </div>
     );
 }
 export default MyD3Component;
