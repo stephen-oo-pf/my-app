@@ -1,13 +1,10 @@
 // File: src/index.tsx
-// Date: 06/03/2020
-// Note: safety-shield settings
+// Date: 05/28/2020
+// Note: cra-with-typescript
 // ..............................................................................
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './_reset.scss;
-import '/_animations.scss;
-import './index.scss';
-
+import './index.sass';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom'
