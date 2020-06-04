@@ -1,4 +1,4 @@
-## CHANGELOG.md
+## NPM.md
 ### safety shield project dependencies
 - react-google-maps
 - d3
