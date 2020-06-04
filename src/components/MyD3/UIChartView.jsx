@@ -1,12 +1,11 @@
-// File: ui/UICircleChart.jsx
-// Date: 06/02/2020
-// Note: Event Resonse Drill Chart Prototype
+// File: ui/UIChartView.tsx
+// Date: 06/04/2020
+// Note: Event Response Drill Chart Prototype
 //..............................................................................
-
 import React, { createRef, Component } from "react";
 import * as d3 from "d3";
 
-class UICircleChart extends Component {
+class UIChartView extends Component {
   constructor(props) {
     super(props);
     this.ref = createRef();
@@ -95,4 +94,4 @@ class UICircleChart extends Component {
   }
 }
 
-export default UICircleChart;
+export default UIChartView;

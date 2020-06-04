@@ -1,12 +1,13 @@
 // File: views/D3Chart.jsx
-// Date: 06/02/2020
+// Date: 06/04/2020
 // Note: Event Resonse Drill Chart Prototypes
 //..............................................................................
 import React, { useState, useEffect } from "react";
 import * as d3 from "d3";
 
-import UICircleChart from "../../ui/UICircleChart";
+import UIChartView from "../../ui/UIChartView";
 
+// import UIChartView from "../../components/MyD3/UIChartView";
 // import PieClass from "../../components/MyD3/PieClass";
 // import PieHooks from "../../components/MyD3/PieHooks";
 // import PieSVG from "../../components/MyD3/PieSVG";
@@ -92,19 +93,18 @@ function D3Chart() {
         />
         */}
         <div>
-          <span className="label">ReactJSX with D3.js Class Component</span>
-        <UICircleChart
-          data={data}
-          width={200}
-          height={200}
-          innerRadius={60}
-          outerRadius={100}
-        />
-      
-        
+        {/*<span className="label">ReactJSX with D3.js Class Component</span>*/}
+          <span className="label">ReactTSX with D3.js Class Component</span>
+          <UIChartView
+            data={data}
+            width={200}
+            height={200}
+            innerRadius={60}
+            outerRadius={100}
+          />
       </div>
     </div>
-  );
+  )
 }
 
 export default D3Chart;
