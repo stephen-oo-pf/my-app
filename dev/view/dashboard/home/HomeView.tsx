@@ -5,54 +5,49 @@
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
-import UIView from '../../../ui/UIView';
 import UIGrid, { GridItem } from '../../../ui/UIGrid';
 import UIIncidentBanner from '../../../ui/UIIncidentBanner';
+import UIView from '../../../ui/UIView';
 
+import AppData from '../../../data/AppData';
 import User from '../../../data/User';
 import UserRights, { hasUserRight } from '../../../data/UserRights';
-import AppData from '../../../data/AppData';
 
+import AppEvent from '../../../event/AppEvent';
 import { listen, unlisten } from '../../../dispatcher/Dispatcher';
 import DashboardEvent from '../../../event/DashboardEvent';
-import AppEvent from '../../../event/AppEvent';
 
 import TitleUtil from '../../../util/TitleUtil';
 
-import OrgStatsWidget from './widget/OrgStatsWidget';
+import DrillWidget from './widget/DrillWidget';
 import ECWidget from './widget/ECWidget';
-import EventsMapWidget from './widget/EventsMapWidget';
 import EventsListWidget from './widget/EventsListWidget';
+import EventsMapWidget from './widget/EventsMapWidget';
 import NotifWidget from './widget/NotifWidget';
 import OrgSelectorWidget from './widget/OrgSelectorWidget';
-import DrillWidget from './widget/DrillWidget';
+import OrgStatsWidget from './widget/OrgStatsWidget';
 
 import './HomeView.scss';
 import homeIcon from '@iconify/icons-mdi/home';
 
 
 export interface IHomeViewProps extends RouteComponentProps {
-
 }
 
-export interface IHomeViewState {
+export interface IHomeViewState {  
     items:GridItem[];
-
 }
 
 export default class HomeView extends React.Component<IHomeViewProps, IHomeViewState> {
-
     static ID:string = "home";
     static PATH:string = "/dashboard";
     static ICON:object = homeIcon;
 
     private grid:React.RefObject<UIGrid> = React.createRef();
 
-
     //master org widgets
     _gridItemOrgStats:GridItem = {id:OrgStatsWidget.ID, component:OrgStatsWidget, title:"",   layout:{x:0, y:0, w:6, h:1, minW:2, minH:1}, isVisible:true};
-    
-    
+       
     //regular account/org widgets    
     _gridItemEventsMap:GridItem =   {id:EventsMapWidget.ID, component:EventsMapWidget, title:"Event Map",      layout:{x:0, y:0, w:6, h:3, minW:4, minH:3}, isVisible:true}
     _gridItemEventsList:GridItem =  {id:EventsListWidget.ID, component:EventsListWidget, title:"Event List",   layout:{x:6, y:0, w:4, h:3, minW:3, minH:2}, isVisible:true}
@@ -61,15 +56,12 @@ export default class HomeView extends React.Component<IHomeViewProps, IHomeViewS
     _gridItemOrgSelector:GridItem = {id:OrgSelectorWidget.ID, component:OrgSelectorWidget, title:"Summary For",layout:{x:0, y:3, w:4, h:1, minW:3, minH:1, maxH:1}, isVisible:true};
     _gridItemDrills:GridItem =      {id:DrillWidget.ID, component:DrillWidget, title:"Drill Schedule",         layout:{x:0, y:4, w:4, h:3, minW:3, minH:3}, isVisible:true};
 
-
     private timeoutID:number = -1;
-
 
     constructor(props: IHomeViewProps) {
         super(props);
 
         let gridItems:GridItem[] = [];
-
         
         if(User.selectedOrg.isRootAdmin && User.selectedOrg.orgId===AppData.masterOrgID){
 
@@ -81,16 +73,16 @@ export default class HomeView extends React.Component<IHomeViewProps, IHomeViewS
         }
         
         gridItems.push(this._gridItemEventsMap);
-        
-        
+               
         if(User.state.userOrgsHasIncidentControl && !User.state.userOrgsHasMasterOrg){
-            gridItems.push(this._gridItemEventsList);
+                   
+            gridItems.push(this._gridItemEventsList);  
+                  
         }else{
+          
             //lets expand the map if no incident control
             this._gridItemEventsMap.layout.w=10;
-        }
-
-        
+        }       
 
         if(User.selectedOrg.orgId!==AppData.masterOrgID){
 
