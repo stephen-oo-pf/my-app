@@ -5,9 +5,9 @@
 import React, { useState, useEffect } from "react";
 import * as d3 from "d3";
 
-import UIChartView from "../../ui/UIChartView";
+//import UIChartView from "../../ui/UIChartView";
 
-// import UIChartView from "../../components/MyD3/UIChartView";
+import UIChartView from "../../components/MyD3/UIChartView";
 // import PieClass from "../../components/MyD3/PieClass";
 // import PieHooks from "../../components/MyD3/PieHooks";
 // import PieSVG from "../../components/MyD3/PieSVG";
