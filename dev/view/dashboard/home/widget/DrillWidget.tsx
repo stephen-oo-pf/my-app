@@ -2,7 +2,6 @@
 // Date: 06/08/2020
 // Note: Safety-Shield WebSite DrillWidget Class
 //..............................................................................
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 

@@ -1,14 +1,14 @@
 // File: UIGrid.tsx
 // Date: 06/08/2020
-// Note: Safety-Shield Website Grid RWD Layout Class
+// Note: Safety-Shield Website Grid Fixed Layout Class
 //..............................................................................
 import React from 'react';
 
 import GridLayout, { WidthProvider } from 'react-grid-layout';
 
 import UIIcon from './UIIcon';
-import UIToggle from './UIToggle';
 import UIScrollContainer from './UIScrollContainer';
+import UIToggle from './UIToggle';
 
 import NextFrame from '../util/NextFrame';
 import TimerUtil from '../util/TimerUtil';
