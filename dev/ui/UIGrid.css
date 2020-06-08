@@ -1,71 +1,16 @@
-.grid .gridItem {
-  z-index: 10;
-}
-.grid .gridItem .gridItemTitle {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  height: 28px;
-  color: #212529;
-  font-weight: 400;
-  font-size: 18px;
-  padding-left: 10px;
-  letter-spacing: 0.6px;
-  cursor: grab;
-}
-.grid .gridItem .gridItemTitle:active {
-  cursor: grabbing;
-}
-.grid .gridItem .gridItemTitle span {
-  margin-left: auto;
-  font-size: 10px;
-  color: #777777;
-  letter-spacing: normal;
-}
-.grid .gridItem .gridItemContent {
-  background-color: #FFF;
-  border-radius: 10px;
-  overflow: hidden;
-  height: calc(100% - 28px);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
-}
-.grid .react-grid-placeholder {
-  background-color: transparent !important;
-  transition: all 0.2s ease-out;
-}
-.grid .react-grid-placeholder:before {
-  content: "";
-  display: block;
-  margin-top: 28px;
-  width: 100%;
-  height: calc(100% - 28px);
-  background-color: #000;
-  border-radius: 10px;
-}
+.grid .gridItem { z-index: 10; }
+.grid .gridItem .gridItemTitle { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; height: 28px; color: #212529; font-weight: 400; font-size: 18px; padding-left: 10px; letter-spacing: 0.6px; cursor: grab; }
+.grid .gridItem .gridItemTitle:active { cursor: grabbing; }
+.grid .gridItem .gridItemTitle span { margin-left: auto; font-size: 10px; color: #777777; letter-spacing: normal; }
+.grid .gridItem .gridItemContent { background-color: #FFF; border-radius: 10px; overflow: hidden; height: calc(100% - 28px); box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18); }
 
-.gridSettings .gridSettingsItem {
-  display: flex;
-  justify-content: space-between;
-  height: 52px;
-  padding: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  align-items: center;
-}
-.gridSettings .gridSettingsItem .label {
-  font-weight: 500;
-  font-size: 16px;
-}
-.gridSettings .gridSettingsItem .rightSide {
-  display: inline-flex;
-  align-items: center;
-}
-.gridSettings .gridSettingsItem .rightSide .icon {
-  margin-right: 5px;
-  opacity: 0.7;
-  user-select: none;
-}
-.gridSettings .gridSettingsItem:last-child {
-  border-bottom: 0;
-}
+.grid .react-grid-placeholder { background-color: transparent !important; transition: all 0.2s ease-out; }
+.grid .react-grid-placeholder:before { content: ""; display: block; margin-top: 28px; width: 100%; height: calc(100% - 28px); background-color: #000; border-radius: 10px; }
+
+.gridSettings .gridSettingsItem { display: flex; justify-content: space-between; height: 52px; padding: 10px; border-bottom: 1px solid rgba(0, 0, 0, 0.1); align-items: center; }
+.gridSettings .gridSettingsItem .label { font-weight: 500; font-size: 16px; }
+.gridSettings .gridSettingsItem .rightSide { display: inline-flex; align-items: center; }
+.gridSettings .gridSettingsItem .rightSide .icon { margin-right: 5px; opacity: 0.7; user-select: none; }
+.gridSettings .gridSettingsItem:last-child { border-bottom: 0; }
 
 /*# sourceMappingURL=UIGrid.css.map */

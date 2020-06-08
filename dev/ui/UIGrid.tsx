@@ -1,14 +1,19 @@
+// File: UIGrid.tsx
+// Date: 06/08/2020
+// Note: Safety-Shield Website Grid RWD Layout Class
+//..............................................................................
 import React from 'react';
-import './UIGrid.scss';
+
+import GridLayout, { WidthProvider } from 'react-grid-layout';
 
 import UIIcon from './UIIcon';
 import UIToggle from './UIToggle';
 import UIScrollContainer from './UIScrollContainer';
 
-import GridLayout, { WidthProvider } from 'react-grid-layout';
 import NextFrame from '../util/NextFrame';
 import TimerUtil from '../util/TimerUtil';
 
+import './UIGrid.scss';
 import eyeIcon from '@iconify/icons-mdi/eye';
 import eyeOff from '@iconify/icons-mdi/eye-off';
 
@@ -20,12 +25,10 @@ export interface UIGridProps {
     rowHeight:number;
 }
 
-export interface UIGridState {
-    
+export interface UIGridState {    
     unmount:boolean;
     cols:number;
 }
-
 
 export interface GridItem{
     id:string;
@@ -44,15 +47,12 @@ export interface GridItem{
     isVisible:boolean;
 }
 
-
 const ResponsiveGridLayout = WidthProvider(GridLayout);
 
 
 export default class UIGrid extends React.Component<UIGridProps, UIGridState> {
-
-
+  
     _colsMobile:number = 2;
-
     
     private grid:React.RefObject<any> = React.createRef();
     private gridContainer:React.RefObject<HTMLDivElement> = React.createRef();
@@ -109,7 +109,6 @@ export default class UIGrid extends React.Component<UIGridProps, UIGridState> {
         });
     }
     
-
     render() {
 
         if(this.state.unmount){
@@ -118,7 +117,6 @@ export default class UIGrid extends React.Component<UIGridProps, UIGridState> {
         let data:GridItem[] = this.props.data.filter(($value)=>{
             return $value.isVisible;
         });
-
         
         let strCN:string = "grid";
         
@@ -192,9 +190,7 @@ export interface IUIGridSettingsProps {
     data:GridItem[];
     onSettingsChanged:($items:GridItem[])=>void;
 }
-export interface IUIGridSettingsState {
-    
-
+export interface IUIGridSettingsState {   
 }
 
 export class UIGridSettings extends React.Component<IUIGridSettingsProps,IUIGridSettingsState> {
@@ -215,8 +211,6 @@ export class UIGridSettings extends React.Component<IUIGridSettingsProps,IUIGrid
         let strCN:string = "gridSettings";
 
         let isSomethingVisible:boolean = this.props.data.filter($value=> $value.isVisible).length>0?true:false;
-
-
 
         return (
             <div className={strCN}>   
@@ -274,5 +268,4 @@ class UIGridSettingsItem extends React.Component<UIGridSettingsItemProps>{
         );
     }
 }
-
-
+// eof
